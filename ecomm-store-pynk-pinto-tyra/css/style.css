@@ -1,0 +1,370 @@
+/* Note there a few "reset" styles given in reset.css. Review those before you begin */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color:white; 
+    margin: 100px; 
+    font: 1em  helvetica, sans-serif; 
+    font-weight: bold;
+  }
+  
+  
+  .header{ 
+    padding: 30px;
+    text-align: center;
+    background-color: #ffdada;
+}
+  
+  .logo {
+      font: 4em/0.8 cocogoose, helvetica, sans-serif;  
+      color: #31326f;
+      display: block;
+      width: 3em;
+      margin: 1em auto;
+      text-align: center;
+      transition: all 0.2s;
+    
+  }
+  .logo:hover {
+      text-shadow: 
+          0.1em 0.1em 0 #ffdada,
+          0.2em 0.2em 0 #dbf6e9,
+          0.3em 0.3em 0 #9ddfd3;
+  }
+  
+  .logo a {text-decoration: none;}
+
+  .item {
+    font: 1.5em cocogoose, helvetica, sans-serif; 
+ }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font: cocogoose, helvetica, sans-serif; 
+  }
+  
+li {
+    float: left;
+  }
+  
+li a, .dropbtn {
+    display: inline-block;
+    color:#31326f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+ li a:hover, .dropdown:hover .dropbtn {
+    background-color:#dbf6e9;
+  }
+  
+li.dropdown {
+    display: inline-block;
+  }
+  
+ .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#dbf6e9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color: #31326f;
+    font: cocogoose, helvetica, sans-serif; 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+.dropdown-content a:hover {background-color:#31326f;}
+  
+ .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #31326f;
+    color:  #31326f;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    height: 60px ;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 5px, 5px, 5px, 5px;
+    background:#31326f;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #31326f;
+    border-left: none;
+    cursor: pointer;
+    height: 60px ;
+  }
+  
+  form.example button:hover {
+    background:#31326f;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .your-products{
+    float:right;
+    display: flex;
+}
+p{
+  font: cocogoose, helvetica, sans-serif;  }
+
+.open{
+margin:60px;
+}
+
+.open p{
+    font: cocogoose, helvetica, sans-serif;  
+    font-size: 20pt;
+  text-align: center;
+    padding: 7px 5px;
+    margin: 40px;
+  font-weight: italic;
+    color:#31326f;
+}
+
+br{
+    margin:20px;
+}
+
+  h1{  font: cocogoose, helvetica, sans-serif;  
+    font-size: 20pt;
+  text-align: center;
+    padding: 7px 5px;
+    margin: 40px;
+  font-weight: bold;
+    color:#31326f;
+  }
+    
+ h2{ font: sans-serif;  
+    font-size: 15pt;
+  text-align: center;
+    padding:7px 20px;
+      font-weight: normal;
+      color:#31326f;
+  }
+  
+ h3{ font: cocogoose, helvetica, sans-serif;  
+    font-size: 15pt;
+  text-align: left;
+    padding: 7px 20px;
+    font-weight: normal;
+    color:#31326f;
+  }
+
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin-top: 40px;
+    background-color: #ffdada;
+  }
+  
+  .card {
+    width:20%;
+    background: #fff;
+    border: 1px solid #31326f;
+    border-radius:8px;
+    margin: 50px;
+    transition: 0.3s;
+  }
+  
+  .card img{
+      width:100%;
+      padding:20px;
+      border-radius: 45px;
+  }
+  
+  .card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .card-body .btn {
+    display: block;
+    color:white;
+    text-align: center;
+    background:  #31326f;
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 20px 20px;
+    border-radius:8px;
+  }
+  
+  .card-body .btn:hover {
+    color: #31326f;
+    background:#dbf6e9;
+      transition: 0.5s;
+      cursor: pointer;
+    transform: scale(1.05);
+    border-radius:8px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+ 
+
+  .rating {
+    unicode-bidi: bidi-override;
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+  }
+
+span{
+    justify-content: space-between;
+    padding: 18px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    position:center;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+
+.footer{
+    padding:50px;
+    margin-top:50px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: #ffdada;
+}
+
+.legal {
+    text-align: center;
+    justify-content:flex-end ;
+    margin: 50px;
+    padding:40px;
+}
+
+.copyright{
+    text-align: right;
+    color: #31326f;
+}
+
+fieldset{margin:20px;
+border: none;
+color: #31326f;
+font: cocogoose, helvetica, sans-serif;  
+font-size: 12pt;
+text-align: center;
+}
+
+fieldset legend{
+  text-align: center;
+}
+
+fieldset .filter-list{
+border: none;
+}
+
+select{
+  font-size: medium;
+  color: #31326f;
+  font: cocogoose, helvetica, sans-serif;  
+  border-color: #31326f;
+  border-width: thin;
+}
+
+.pages{
+  position:center;
+  font: cocogoose, helvetica, sans-serif;  
+  margin:20px;
+  padding:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+  
+.pages a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.pages a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.pages .previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.pages .next {
+  background-color: #31326f;
+  color: white;
+}
+
